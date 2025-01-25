@@ -156,43 +156,54 @@ section {
     background: var(--highlight-color);
 }
 
+
+/* <----------About----------->  */
+
+/* About Section */
 #About {
-    background-color: var(--second-background);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 10em;
-    padding: 4em 0;
+    gap: 2em;
+    padding: 3em;
 }
 
-#About img {
-    width: 30vw;
-    border-radius: 1em;
-}
-
+/* About Box (Text) */
 .About-box {
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     text-align: left;
-    gap: 2em;
+    gap: 1.5em;
 }
 
+/* About Me Heading */
 .About-box h1 {
-    font-size: 5em;
+    font-size: 3.5em;
+    background: linear-gradient(to right, #32cd32, #1e90ff);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
+/* About Me Paragraph */
 .About-box p {
-    color: white;
-    opacity: 0.7;
+    opacity: 0.8;
+    line-height: 1.6;
 }
 
+/* Skills Section */
 .Skills {
     display: flex;
-    justify-content: center;
+    text-align: left;
     gap: 10em;
 }
 
-.Skills ul {
+/* Skills List */
+.Skills ul  {
+    /* list-style-type: none;
+    padding: 0; */
+
     font-size: 1.3em;
     font-weight: 500;
     display: flex;
@@ -202,25 +213,57 @@ section {
     align-items: baseline;
 }
 
-.Skills ul li span {
+.Skills ul li {
     display: flex;
-    align-items: center;
     gap: 0.5em;
-    font-size: 1.3em;
-    transition: 0.3s ease-in-out;
+    font-size: 1.2em;
+    transition: transform 0.3s ease-in-out;
 }
 
-.Skills ul li span:hover {
+/* Skill Item Hover */
+.Skills ul li a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: color 0.3s ease-in-out;
+}
+
+.Skills ul li a:hover {
+    color: aqua;
+    opacity: 1;
+}
+
+.Skills ul li:hover {
     transform: translateX(10px);
 }
 
-.Skills ul li i {
-    font-size: 1.2em;
+/* Image Section */
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 1em;
 }
 
-.about-box h2 {
-    font-size: 2.5em;
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #About {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .Skills {
+        grid-template-columns: 1fr 1fr;
+    }
 }
+
+@media screen and (max-width: 480px) {
+    .Skills {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* <----------service----------->  */
 
 #Services {
     background-color: var(--background);
@@ -240,6 +283,8 @@ section {
     padding: 0 15%;
 }
 
+
+
 .box {
     border: 3px solid rgb(49, 49, 49);
     border-radius: 0.5em;
@@ -248,11 +293,13 @@ section {
     justify-content: center;
     overflow: hidden;
     object-fit: cover;
-    padding: 3em;
+    padding: 1em;
     gap: 2em;
     color: white;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    max-width: 100%; /* Ensure it is responsive */
+    box-sizing: border-box;
 }
 
 .box:hover {
@@ -267,11 +314,48 @@ section {
     font-size: 2em;
 }
 
+/* Make sure all images have the same size and aspect ratio */
 .box img {
-    min-width: 25px;
+    width: 100%; /* Make the image fill the width of the container */
+    height: auto; /* Keep the aspect ratio */
+    max-height: 200px; /* Set a max height to control the image size */
+    object-fit: cover; /* Ensure the image scales correctly without distortion */
     border-radius: 0.5em;
 }
 
+/* Media queries for responsiveness on smaller screens */
+@media (max-width: 768px) {
+    .box {
+        padding: 0.5em;
+        gap: 1em;
+    }
+
+    .box h1 {
+        font-size: 1.5em;
+    }
+
+    .box img {
+        max-height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        padding: 0.5em;
+        gap: 1em;
+    }
+
+    .box h1 {
+        font-size: 1.2em;
+    }
+
+    .box img {
+        max-height: 120px;
+    }
+}
+
+
+/* <---------Contact---------> */
 #Contact {
     background-color: var(--second-background);
     padding: 4em 0;
