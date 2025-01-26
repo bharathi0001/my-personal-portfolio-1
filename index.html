@@ -9,19 +9,23 @@
 </head>
 <body>
 
+    
     <nav>
         <a href="#" class="logo"><span>B.Palani Bharathi</span></a>
         <ul class="links">
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Services">Services</a>
-            <a href="#Contact">Contact</a>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        
-        <i class='bx bx-menu-alt-right' id="menu"></i>
-
+    
+        <i class="bx bx-menu-alt-right" id="menu"></i>
+    
         <a href="#Contact" class="btn">Contact Me</a>
     </nav>
+    
+
+
     <section id="Home">
         <img src="images/WhatsApp Image 2025-01-01 at 23.13.46_f3e29f83.jpg" alt="">
 
@@ -70,7 +74,7 @@
 
 
     <section id="Services">
-        <h1 class="header"><span>Services</span></h1>
+        <h1 class="header"><span>PROJECTS</span></h1>
 
         <div class="Services-container">
             <div class="box">
@@ -103,60 +107,67 @@
     </section>
 
 
-    <section id="Contact">
-        <h1 class="header"><span>Contact</span></h1>
+   
+    <!-- Contact Section -->
+    <section id="contact" class="s-contact">
 
-        <form action="#">
-            <div class="input-box">
-                <span>Full Name</span>
-                <input type="text" placeholder="Enter Your Full Name">
-            </div>
-
-            <div class="input-box">
-                <span>Your Email</span>
-                <input type="text" placeholder="Enter Your Email">
-            </div>
-
-            <div class="input-box">
-                <span>Enter Your Message</span>
-                <input type="text" placeholder="Enter Your Message">
-            </div>
-            <div class="btn">Submit</div> 
-        </form>
-    </section>
-
-    <footer>
-        <div class="col-left">
-            <div class="col-box">
-                <span><box-icon type='solid' name='location-plus'></box-icon></span>
-                <span>7/133,pulavarpalayam,tirrupur,638056</span>
-            </div>
-
-            <div class="col-box">
-                <span><box-icon name='phone' type='solid'></box-icon></span>
-                <span>+91 9791279603</span>
-            </div>
-            <div class="col-box">
-                <span><box-icon name='envelope'></box-icon></span>
-                <span>pbharathibalan@gmail.com </span>
-            </div>
+        <div class="s-contact__header">
+            <h1 class="header"><span>Contact Us</span></h1>
         </div>
 
-        <div class="col-right">
-            <span>About My Services</span>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est libero, temporibus modi maxime molestias deleniti esse ipsam possimus, saepe voluptatibus, voluptates incidunt consectetur aliquid ratione laborum! Corrupti, voluptas. Impedit, sint?</p>
-            
-            <div class="social-icons">
-                <span><i class='bx bxl-facebook-square' ></i></span>
-                
-                <span><i class='bx bxl-instagram-alt' ></i></span>
-                
-                <span><i class='bx bxl-linkedin' ></i></span>
+        <div class="s-contact__content">
 
-                <span><i class='bx bxl-github' ></i></span>
+            <!-- Left Column: Project Introduction -->
+            <div class="contact-text">
+                <h4>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae ea nam iusto eius placeat aliquam culpa nostrum pariatur a odit.
+            </h4>
+            </div>
+
+            <!-- Right Column: Contact Information -->
+            <div class="contact-info">
+                <div class="contact-block">
+                    <h5><span>Email</span></h5>
+                    <p><span><a href="mailto:pbharathibalan@gmail.com ">pbharathibalan@gmail.com </a></span></p>
+                </div>
+                <div class="contact-block">
+                    <h5><span>Phone</span></h5>
+                    <p><a href="tel:+91 9791279603">+91 9791279603</a></p>
+                </div>
+
+                <!-- Contact Button -->
+                <div class="contact-btn">
+                    <a href="mailto:pbharathibalan@gmail.com " class="btn-primary">LET'S TALK</a>
+                </div>
+            </div>
+
+        </div> <!-- End of s-contact__content -->
+    </section><br><br> <!-- End of s-contact -->
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3 class="footer-title"><span>About Us</span></h3>
+                <p><b>7/133, Pulavarpalayam, Tirrupur, 638056</b></p>
+                <p>+91 9791279603</p>
+                <p>pbharathibalan@gmail.com</p>
+            </div>
+    
+            <div class="footer-right">
+                <div class="social-icons">
+                    <a class="icon" href="" ><i class="bx bxl-instagram"></i></a>
+                    <a class="icon" href=""><i class="bx bxl-facebook"></i></a>
+                    <a class="icon" href=""><i class="bx bxl-linkedin"></i></a>
+                    <a class="icon" href=""><i class="bx bxl-github"></i></a>
+                </div>
             </div>
         </div>
     </footer>
+    
+    
+    
 
     <script src="style.css"></script>
 </body>
